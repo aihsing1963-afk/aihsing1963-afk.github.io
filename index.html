@@ -9,33 +9,34 @@
   * { box-sizing:border-box; }
   body { margin:0; background:var(--bg); color:var(--txt);
     font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang TC","Microsoft JhengHei",sans-serif;
-    line-height:1.6; -webkit-text-size-adjust:100%; }
-  .wrap { max-width:820px; margin:0 auto; padding:16px; }
-  header { text-align:center; padding:20px 0 8px; border-bottom:1px solid var(--line); }
-  header h1 { margin:0; font-size:1.4rem; }
-  header .stamp { color:var(--sub); font-size:.85rem; margin-top:4px; }
+    line-height:1.7; -webkit-text-size-adjust:100%; font-size:18px; }
+  .wrap { max-width:860px; margin:0 auto; padding:20px; }
+  header { text-align:center; padding:24px 0 10px; border-bottom:1px solid var(--line); }
+  header h1 { margin:0; font-size:1.8rem; }
+  header .stamp { color:var(--sub); font-size:1rem; margin-top:6px; }
   .card { background:var(--card); border:1px solid var(--line); border-radius:14px;
-    padding:16px; margin:16px 0; }
-  .card h2 { margin:0 0 10px; font-size:1.1rem; color:var(--accent); }
-  .sub-h { color:var(--sub); font-size:.8rem; margin:14px 0 6px; text-transform:none; letter-spacing:.03em; }
-  table.data { width:100%; border-collapse:collapse; font-size:.95rem; }
-  table.data td { padding:7px 6px; border-bottom:1px solid var(--line); vertical-align:middle; }
+    padding:20px; margin:20px 0; }
+  .card h2 { margin:0 0 12px; font-size:1.4rem; color:var(--accent); }
+  .sub-h { color:var(--sub); font-size:1rem; margin:16px 0 8px; text-transform:none; letter-spacing:.03em; }
+  table.data { width:100%; border-collapse:collapse; font-size:1.1rem; }
+  table.data td { padding:9px 6px; border-bottom:1px solid var(--line); vertical-align:middle; }
   table.data td.lbl { color:var(--sub); white-space:nowrap; }
   table.data td.val { text-align:right; font-variant-numeric:tabular-nums; font-weight:600; }
   .taiex { display:flex; flex-wrap:wrap; align-items:baseline; gap:10px;
-    background:#e8f0fe; border-radius:10px; padding:12px 14px; margin-bottom:6px; }
-  .taiex .t-label { color:var(--sub); font-size:.9rem; }
-  .taiex .t-val { font-size:1.6rem; font-weight:700; margin-left:auto; font-variant-numeric:tabular-nums; }
-  .taiex .t-chg { font-size:.95rem; font-weight:600; width:100%; text-align:right; }
-  ul.news { margin:6px 0; padding-left:18px; }
-  ul.news li { margin:5px 0; font-size:.9rem; }
+    background:#e8f0fe; border-radius:10px; padding:14px 16px; margin-bottom:8px; }
+  .taiex .t-label { color:var(--sub); font-size:1.05rem; }
+  .taiex .t-val { font-size:2rem; font-weight:700; margin-left:auto; font-variant-numeric:tabular-nums; }
+  .taiex .t-chg { font-size:1.15rem; font-weight:600; width:100%; text-align:right; }
+  ul.news { margin:8px 0; padding-left:20px; }
+  ul.news li { margin:7px 0; font-size:1.05rem; }
   .na { color:var(--sub); }
-  footer { text-align:center; color:var(--sub); font-size:.75rem; padding:20px 0; border-top:1px solid var(--line); }
+  footer { text-align:center; color:var(--sub); font-size:.9rem; padding:24px 0; border-top:1px solid var(--line); }
   @media (max-width:480px) {
-    .wrap { padding:10px; }
-    header h1 { font-size:1.2rem; }
-    .taiex .t-val { font-size:1.35rem; }
-    table.data { font-size:.88rem; }
+    .wrap { padding:14px; }
+    body { font-size:17px; }
+    header h1 { font-size:1.5rem; }
+    .taiex .t-val { font-size:1.7rem; }
+    table.data { font-size:1.05rem; }
   }
 </style>
 </head>
@@ -43,7 +44,7 @@
 <div class="wrap">
 <header>
   <h1>📊 每日財經資訊</h1>
-  <div class="stamp">整理時間（台灣）：2026-08-20 02:31（台灣）</div>
+  <div class="stamp">整理時間（台灣）：2026-08-20 02:35（台灣）</div>
 </header>
 
 <div class="card">
@@ -56,38 +57,38 @@
 <tr><td class="lbl">聯電</td><td class="val"><span style="color:#1faa59">▼ -2.50 (-2.06%)</span></td></tr>
 <tr><td class="lbl">富邦金</td><td class="val"><span style="color:#e23b3b">▲ +4.00 (+3.19%)</span></td></tr>
 <tr><td class="lbl">國泰金</td><td class="val"><span style="color:#e23b3b">▲ +1.10 (+1.12%)</span></td></tr>
-<tr><td class="lbl">台積電ADR(美)</td><td class="val"><span style="color:#1faa59">▼ -0.88 (-0.21%)</span></td></tr></table>
+<tr><td class="lbl">台積電ADR(美)</td><td class="val"><span style="color:#1faa59">▼ -0.43 (-0.10%)</span></td></tr></table>
   <div class="sub-h">美股三大指數</div>
-  <table class="data"><tr><td class="lbl">道瓊工業指數</td><td class="val"><span style="color:#e23b3b">▲ +139.72 (+0.26%)</span></td></tr>
-<tr><td class="lbl">S&amp;P 500</td><td class="val"><span style="color:#e23b3b">▲ +26.61 (+0.35%)</span></td></tr>
-<tr><td class="lbl">納斯達克指數</td><td class="val"><span style="color:#e23b3b">▲ +63.62 (+0.24%)</span></td></tr></table>
+  <table class="data"><tr><td class="lbl">道瓊工業指數</td><td class="val"><span style="color:#e23b3b">▲ +143.41 (+0.27%)</span></td></tr>
+<tr><td class="lbl">S&amp;P 500</td><td class="val"><span style="color:#e23b3b">▲ +27.12 (+0.35%)</span></td></tr>
+<tr><td class="lbl">納斯達克指數</td><td class="val"><span style="color:#e23b3b">▲ +64.15 (+0.24%)</span></td></tr></table>
   <div class="sub-h">匯率</div>
-  <table class="data"><tr><td class="lbl">美元/台幣 (USD/TWD)</td><td class="val"><span style="color:#e23b3b">▲ +0.01 (+0.04%)</span></td></tr>
-<tr><td class="lbl">美元/日圓 (USD/JPY)</td><td class="val"><span style="color:#1faa59">▼ -0.88 (-0.55%)</span></td></tr></table>
+  <table class="data"><tr><td class="lbl">美元/台幣 (USD/TWD)</td><td class="val"><span style="color:#1faa59">▼ -0.01 (-0.03%)</span></td></tr>
+<tr><td class="lbl">美元/日圓 (USD/JPY)</td><td class="val"><span style="color:#1faa59">▼ -0.95 (-0.60%)</span></td></tr></table>
   <div class="sub-h">台股相關要聞（Google News，即時）</div>
-  <ul class='news'><li>尾盤近百億元神秘大單！台積電跌30元收2350元 分析師：震盪還沒結束</li><li>台積電A16背面供電技術突破！埃米級競賽再進一步：速度增10%、功耗降20%</li><li>台股震盪 留意三大風險 國際變數多、技術面轉弱、三大法人轉賣</li><li>【0819台股盤後】台指期結算壓低大盤跌589 點收44,719 點！三大法人狂砍708 億，震檔盤勢中被動元件異軍突起【3090 日電貿】【6173 信昌電】【2492 華新科】｜豐雲學堂2026 年 08 月</li><li>點名台積電繼續漲！最新目標價、關鍵原因出爐</li><li>【Follow法人】外資逆勢回補聯電！群創遭狂砍逾6萬張 3天狙殺力積電15萬張</li><li>目標價維持3,100元 美銀：台積電2027年資本支出上看850億美元</li><li>台積電A16晶背供電技術大突破 埃米級製程競賽領先群倫</li></ul>
+  <ul class='news'><li>尾盤近百億元神秘大單！台積電跌30元收2350元 分析師：震盪還沒結束</li><li>台積電A16背面供電技術突破！埃米級競賽再進一步：速度增10%、功耗降20%</li><li>【0819台股盤後】台指期結算壓低大盤跌589 點收44,719 點！三大法人狂砍708 億，震檔盤勢中被動元件異軍突起【3090 日電貿】【6173 信昌電】【2492 華新科】｜豐雲學堂2026 年 08 月</li><li>目標價維持3,100元 美銀：台積電2027年資本支出上看850億美元</li><li>點名台積電繼續漲！最新目標價、關鍵原因出爐</li><li>【Follow法人】外資逆勢回補聯電！群創遭狂砍逾6萬張 3天狙殺力積電15萬張</li><li>台積電A16晶背供電技術大突破 埃米級製程競賽領先群倫</li><li>台股震盪誰能突圍？矽晶圓、功率半導體能否複製被動元件漲價行情？｜股市話題｜豐雲學堂2026 年 08 月</li></ul>
 </div>
 
 <div class="card">
   <h2>🌐 每日國際財經速報</h2>
   <div class="sub-h">主要股市收盤</div>
-  <table class="data"><tr><td class="lbl">S&amp;P 500（美）</td><td class="val"><span style="color:#e23b3b">▲ +26.79 (+0.35%)</span></td></tr>
-<tr><td class="lbl">道瓊（美）</td><td class="val"><span style="color:#e23b3b">▲ +139.16 (+0.26%)</span></td></tr>
-<tr><td class="lbl">那斯達克（美）</td><td class="val"><span style="color:#e23b3b">▲ +65.92 (+0.25%)</span></td></tr>
+  <table class="data"><tr><td class="lbl">S&amp;P 500（美）</td><td class="val"><span style="color:#e23b3b">▲ +27.39 (+0.36%)</span></td></tr>
+<tr><td class="lbl">道瓊（美）</td><td class="val"><span style="color:#e23b3b">▲ +142.91 (+0.27%)</span></td></tr>
+<tr><td class="lbl">那斯達克（美）</td><td class="val"><span style="color:#e23b3b">▲ +64.26 (+0.24%)</span></td></tr>
 <tr><td class="lbl">日經225（日）</td><td class="val"><span style="color:#1faa59">▼ -1,759.52 (-2.54%)</span></td></tr>
 <tr><td class="lbl">德國DAX（歐）</td><td class="val"><span style="color:#1faa59">▼ -37.03 (-0.14%)</span></td></tr>
 <tr><td class="lbl">英國FTSE100（歐）</td><td class="val"><span style="color:#e23b3b">▲ +15.35 (+0.14%)</span></td></tr>
 <tr><td class="lbl">香港恆生</td><td class="val"><span style="color:#e23b3b">▲ +17.92 (+0.07%)</span></td></tr>
 <tr><td class="lbl">台股加權指數（TAIEX）</td><td class="val"><span style="color:#1faa59">▼ -548.59 (-1.20%)</span></td></tr></table>
   <div class="sub-h">匯率</div>
-  <table class="data"><tr><td class="lbl">美元/台幣 (USD/TWD)</td><td class="val"><span style="color:#e23b3b">▲ +0.01 (+0.04%)</span></td></tr>
-<tr><td class="lbl">美元/日圓 (USD/JPY)</td><td class="val"><span style="color:#1faa59">▼ -0.88 (-0.55%)</span></td></tr></table>
+  <table class="data"><tr><td class="lbl">美元/台幣 (USD/TWD)</td><td class="val"><span style="color:#1faa59">▼ -0.00 (-0.01%)</span></td></tr>
+<tr><td class="lbl">美元/日圓 (USD/JPY)</td><td class="val"><span style="color:#1faa59">▼ -0.94 (-0.59%)</span></td></tr></table>
   <div class="sub-h">商品（黃金／原油）</div>
-  <table class="data"><tr><td class="lbl">黃金 COMEX (USD/oz)</td><td class="val"><span style="color:#e23b3b">▲ +175.20 (+4.01%)</span></td></tr>
-<tr><td class="lbl">原油 WTI (USD/桶)</td><td class="val"><span style="color:#1faa59">▼ -0.16 (-0.19%)</span></td></tr>
-<tr><td class="lbl">原油 Brent (USD/桶)</td><td class="val"><span style="color:#e23b3b">▲ +0.86 (+0.94%)</span></td></tr></table>
+  <table class="data"><tr><td class="lbl">黃金 COMEX (USD/oz)</td><td class="val"><span style="color:#e23b3b">▲ +173.60 (+3.98%)</span></td></tr>
+<tr><td class="lbl">原油 WTI (USD/桶)</td><td class="val"><span style="color:#1faa59">▼ -0.25 (-0.29%)</span></td></tr>
+<tr><td class="lbl">原油 Brent (USD/桶)</td><td class="val"><span style="color:#e23b3b">▲ +0.87 (+0.96%)</span></td></tr></table>
   <div class="sub-h">國際財經要聞（Google News，即時）</div>
-  <ul class='news'><li>霍爾木茲還沒通，油價卻不慌了？真正的危機正在後面</li><li>2026航運股有哪些？貨櫃三雄長榮、陽明、萬海比較，油價、運價影響一次看｜豐雲學堂2026 年 08 月</li><li>油價利率齊升，日經指數兩日跌近4000點</li><li>AI融資與財政擴張交織成「債務風暴」 高盛：聯準會恐因此被迫升息</li><li>國際油價上漲 持續專案平穩 汽、柴油各吸收5.9及5.6元 8/17-8/23國內汽、柴油價格維持不調整</li><li>成熟公債殖利率處高位 持續壓抑全球股市表現</li></ul>
+  <ul class='news'><li>霍爾木茲還沒通，油價卻不慌了？真正的危機正在後面</li><li>AI融資與財政擴張交織成「債務風暴」 高盛：聯準會恐因此被迫升息</li><li>2026航運股有哪些？貨櫃三雄長榮、陽明、萬海比較，油價、運價影響一次看｜豐雲學堂2026 年 08 月</li><li>油價利率齊升，日經指數兩日跌近4000點</li><li>國際油價上漲 持續專案平穩 汽、柴油各吸收5.9及5.6元 8/17-8/23國內汽、柴油價格維持不調整</li><li>油價、債息夾殺！日股狂瀉逾2100點、韓股跌逾5% 晶片股成重災區</li></ul>
 </div>
 
 <footer>
