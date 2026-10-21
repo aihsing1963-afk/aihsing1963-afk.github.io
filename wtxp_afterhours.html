@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>台指期盤後 (WTXP&) 看板</title>
+<style>
+  :root{--bg:#0f172a;--card:#1e293b;--ink:#e2e8f0;--muted:#94a3b8;--up:#f97316;--down:#ef4444;--accent:#38bdf8;}
+  *{box-sizing:border-box}
+  body{margin:0;font-family:-apple-system,"PingFang TC","Microsoft JhengHei",Segoe UI,Roboto,sans-serif;
+    background:var(--bg);color:var(--ink);line-height:1.6;padding:20px}
+  .wrap{max-width:520px;margin:0 auto}
+  .card{background:var(--card);border:1px solid #334155;border-radius:16px;padding:20px;margin-bottom:16px}
+  h1{font-size:1.25rem;margin:0 0 4px}
+  .sub{color:var(--muted);font-size:.82rem;margin-bottom:14px}
+  .price{font-size:2.6rem;font-weight:700;color:var(--up)}
+  .chg{font-size:1.05rem;color:var(--up);margin-bottom:12px}
+  table{width:100%;border-collapse:collapse;font-size:.92rem}
+  th,td{text-align:left;padding:8px 6px;border-bottom:1px solid #334155}
+  th{color:var(--muted);font-weight:500;width:42%}
+  td.num{font-variant-numeric:tabular-nums}
+  .bar{height:8px;background:linear-gradient(90deg,#1e3a8a,#f97316);border-radius:4px;margin:14px 0 6px}
+  .barlabels{display:flex;justify-content:space-between;color:var(--muted);font-size:.78rem}
+  .btn{display:block;text-align:center;background:var(--accent);color:#0f172a;
+    text-decoration:none;padding:12px;border-radius:10px;font-weight:600;margin-top:14px}
+  .note{font-size:.78rem;color:var(--muted);margin-top:10px}
+  .pill{display:inline-block;background:#0ea5e9;color:#04293a;border-radius:999px;padding:2px 10px;font-size:.75rem}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="card">
+    <h1>台指期盤後 <span class="pill">WTXP&</span></h1>
+    <div class="sub">來源：wantgoo.com 手機截圖快照 ｜ 時間：2026-10-21 05:00（盤後時段）</div>
+    <div class="price">46,975.00</div>
+    <div class="chg">+634.00 (+1.37%)</div>
+    <div class="bar"></div>
+    <div class="barlabels"><span>46,136（低）</span><span>47,098（高）</span></div>
+    <table>
+      <tr><th>開盤</th><td class="num">46,490.00</td></tr>
+      <tr><th>最高</th><td class="num">47,098.00</td></tr>
+      <tr><th>最低</th><td class="num">46,136.00</td></tr>
+      <tr><th>昨收</th><td class="num">46,691.00</td></tr>
+      <tr><th>均價</th><td class="num">46,615.72</td></tr>
+      <tr><th>成交量（口）</th><td class="num">30,319</td></tr>
+    </table>
+  </div>
+
+  <div class="card">
+    <h1 style="font-size:1.05rem">加權指數（參考）</h1>
+    <div class="sub">同快照內參考值</div>
+    <div class="price" style="font-size:1.8rem;color:var(--accent)">46,709.20</div>
+    <div class="chg" style="color:var(--accent)">+416.27 (+0.9%)</div>
+  </div>
+
+  <a class="btn" href="https://www.wantgoo.com/taifex/afterhours" target="_blank" rel="noopener">開啟玩股網即時盤後行情 ↗</a>
+  <div class="note">點上方按鈕在瀏覽器開啟玩股網，即時盤後數據以該頁為準。本頁僅保留您提供的快照，不自行抓取即時資料（避免 CORS 限制）。</div>
+</div>
+</body>
+</html>
